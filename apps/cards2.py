@@ -2,7 +2,7 @@ from io import StringIO
 from pathlib import Path
 import streamlit as st
 import cv2
-from yolov5.test2 import detect
+
 import os
 import numpy as np
 import pandas as pd
@@ -11,6 +11,8 @@ import argparse
 from PIL import Image
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 import json
+
+from yolov5.test2 import detect
 def get_subdirs(b='.'):
     '''
         Returns all sub-directories in a specific Path
